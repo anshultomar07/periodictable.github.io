@@ -1,0 +1,170 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.positione-relative-top-3{
+    position: relative;
+    top: 0.5rem;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #001330;
+}
+.container{
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(18, minmax(40px, 1fr));
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 1.5rem;
+    border-radius: 8px;
+    /* border: 2px solid red; */
+    overflow: auto;
+    
+    
+}
+.element{
+    text-align: center;
+    justify-content: center;
+    border: 1px solid rgb(157, 0, 102);
+    width: auto;
+    height: 60px;
+    transition: all ease-in-out 0.3s;
+    position: relative;
+    font-family: 'Hind Siliguri', sans-serif;
+    border-radius: 5px;
+
+}
+
+.element:hover{
+    transform: translate(40px,50px);
+    transform: scale(1.5, 1.2);
+    border: 1px solid rgb(157, 0, 102);
+    z-index: 1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.reactive_non_metal{
+    background-color: #76a6ec;  
+    color: #001b44;
+
+}
+
+.alkali_metals{
+    background-color: rgb(113, 202, 243);
+    color: rgb(0, 63, 92);
+}
+
+.metalloids{
+
+    background-color: rgb(246, 215, 158);
+    color: rgb(116, 75, 0);
+}
+
+.alkaline_earth_metals{
+    background-color: rgb(237, 142, 142);
+    color: rgb(151, 0, 0);
+}
+
+.transition_metals{
+    background-color: rgb(197, 145, 234);
+    color:rgb(89, 0, 152);
+}
+
+.post_transition_metals{
+    background-color: rgb(178, 255, 161);
+    color: rgb(17, 91, 0);
+}
+
+.noble_gases{
+    background-color: rgb(255, 191, 186);
+    color: rgb(94, 6, 0);
+}
+
+.lanthanides{
+    background-color: lightblue;
+    color: rgb(0, 70, 94);
+}
+
+.actinides{
+    background-color: rgb(255, 199, 150);
+    color: rgb(107, 50, 0);
+}
+
+.unknown_properties{
+    background-color: rgb(216, 216, 216);
+    color: rgb(59, 59, 59);
+}
+
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 8rem;
+    border-radius: 8px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    
+}
+h3{
+    text-align: center;
+    color: #002c6d;
+}
+.define_elements{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* transition: all ease-in-out 0.5s; */
+    /* background-color:#f8ba69; */
+    height: 17rem;
+    /* box-shadow: 2px 4px 5px 6px rgb(255, 207, 207); */
+    overflow: auto;
+}
+
+/* .define_elements:hover{
+    transform: scale(1.03);
+} */
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all ease-in-out 0.5s;
+}
+a :hover{
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .define_elements{
+        font-size: 0.65rem;
+        height: 12rem;
+    }
+    a{
+        font-size: 0.65rem;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+    .define_elements{
+        font-size: 0.9rem;
+    }
+    a{
+        font-size: 0.9rem;
+    }
+}
